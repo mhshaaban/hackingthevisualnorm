@@ -82,7 +82,7 @@ pt.orgTreeNetwork.init = function(graph) {
         .data(pt.orgTreeNetwork.nodes)
       .enter().append("circle")
         .attr("class", "node")
-        .style("fill", function(d,i) { return nodeColors[i%(nodeColors.length-1)]; })
+        .style("fill", function(d,i) { return nodeColors(d.group); })
         .attr("r", pt.orgTreeNetwork.nodeRadius)
         .call(pt.orgTreeNetwork.force.drag);
 
