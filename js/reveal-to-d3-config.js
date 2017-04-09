@@ -62,7 +62,7 @@ pt.slideIdToFunctions = {
   },
   'org-tree-network': {
     'init': function() {
-      pt.orgTreeNetwork.init(graph);
+      pt.orgTreeNetwork.init(testGraph);
     },
     '-1': function() {
       pt.orgTreeNetwork.treeNetwork();
@@ -308,7 +308,7 @@ function removeSVGs() {
   d3.select('#intro-organogram #organogramIntro svg').remove();
   d3.select('#org-tree-network #orgTreeNetwork svg').remove();
   //d3.select('#org-interactivity #orgInteractivity svg').remove();
-  
+
   //Voronoi scatter plot
   d3.select('#intro-voronoi #voronoiIntro svg').remove();
   pt.voronoiIntro.moveCell = false;
