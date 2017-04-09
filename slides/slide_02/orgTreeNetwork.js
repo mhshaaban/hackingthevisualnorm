@@ -31,7 +31,7 @@ pt.orgTreeNetwork.init = function(graph) {
 	/////////////////////////// Initialize force //////////////////////////////
 	///////////////////////////////////////////////////////////////////////////
 
-  var nodeColors = = d3.scale.ordinal()
+  var nodeColors = d3.scale.ordinal()
 .range(["#EFB605","#E58903","#E01A25","#D10D37","#C20049","#991C71","#AD498D","#C176A9","#D6A4C6","#66489F","#846CB2","#2074A0","#4C8FB3","#79ABC6","#A5C7D9","#D2E3EC","#10A66E","#7EB852"])
 .domain(["Non-Mamlūks","Awlād al-Nās","Ayyūbid","Shajar","Early Mamlūks","Manṣūrī Amirs","Nāṣirī Amirs","Nāṣirī (Ḥasan) Amirs","Other Amirs","Baybars","Sons of Baybars","Qalāwūn","Sons","Grandsons","Great Grandsons","Great Great Grandsons","Qalāwūnid Princes & Princesses","Qalāwūnid Royal Wives"]);
 
