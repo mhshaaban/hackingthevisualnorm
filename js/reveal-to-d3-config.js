@@ -65,9 +65,6 @@ pt.slideIdToFunctions = {
       pt.orgTreeNetwork.init(testGraph);
     },
     '-1': function() {
-      pt.orgTreeNetwork.treeNetwork();
-    },
-    0: function() {
       pt.orgTreeNetwork.normalNetwork();
     }
   },
