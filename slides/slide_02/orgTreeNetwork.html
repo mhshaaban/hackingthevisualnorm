@@ -3,16 +3,94 @@
 	  stroke: #fff;
 	  stroke-width: 1.5px;
 	}
-
 	#org-tree-network .link {
 	  stroke: #999;
 	  stroke-width: 1px;
 	  stroke-opacity: .4;
 	  fill: none;
 	}
-</style>
 
+	/**** Tooltip ****/
+	#org-tree-network #circle-tooltip {
+		position: absolute;
+		text-align: center;
+		opacity: 0;
+	}
+	#org-tree-network .popover {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 1060;
+	  display: none;
+	  max-width: 276px;
+	  padding: 10px 15px 10px 15px;
+	  font-style: normal;
+	  font-weight: normal;
+	  letter-spacing: normal;
+	  line-break: auto;
+	  line-height: 1.42857143;
+	  text-align: left;
+	  text-align: start;
+	  text-decoration: none;
+	  text-shadow: none;
+	  text-transform: none;
+	  white-space: normal;
+	  word-break: normal;
+	  word-spacing: normal;
+	  word-wrap: normal;
+	  font-size: 14px;
+	  background-color: #ffffff;
+	  -webkit-background-clip: padding-box;
+	          background-clip: padding-box;
+	  border: 1px solid #e3e3e3;
+	  border: 1px solid rgba(0, 0, 0, 0.1);
+	  /*border-radius: 3px;*/
+	  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	  pointer-events: none;
+	}
+	#org-tree-network .popover.top {
+	  margin-top: -10px;
+	}
+	#org-tree-network .popover > .arrow,
+	#org-tree-network .popover > .arrow:after {
+	  position: absolute;
+	  display: block;
+	  width: 0;
+	  height: 0;
+	  border-color: transparent;
+	  border-style: solid;
+	}
+	#org-tree-network .popover > .arrow {
+	  border-width: 8px;
+	}
+	#org-tree-network .popover > .arrow:after {
+	  border-width: 8px;
+	  content: "";
+	}
+	#org-tree-network .popover.top > .arrow {
+	  left: 50%;
+	  margin-left: -8px;
+	  border-bottom-width: 0;
+	  border-top-color: #e3e3e3;
+	  border-top-color: rgba(0, 0, 0, 0.1);
+	  bottom: -8px;
+	}
+	#org-tree-network .popover.top > .arrow:after {
+	  content: " ";
+	  bottom: 1px;
+	  margin-left: -8px;
+	  border-bottom-width: 0;
+	  border-top-color: #ffffff;
+	}
+	#org-tree-network #voronoi-tooltip-content {
+		text-align: center;
+	}
+
+</style>
+<div id="tooltip"></div>
 <section id="org-tree-network">
+	
 	<div id="orgTreeNetwork"></div>
 
 	<span class="fragment"></span>
